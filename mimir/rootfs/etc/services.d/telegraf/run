@@ -4,16 +4,14 @@
 # s6-overlay docs: https://github.com/just-containers/s6-overlay
 # ==============================================================================
 
-# Add your code here
-
 # Declare variables
-declare message
+declare scrape_ha
 
 ## Get the 'message' key from the user config options.
-message=$(bashio::config 'message')
+scrape_ha=$(bashio::config 'message')
 
-## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${message:="Hello World..."}"
-
-## Run your program
-exec /usr/bin/my_program
+if $scrape_ha; then
+    exec /bin/telegraf
+else
+    bashio::log.info "Not running telegraf, as scraping is not enabled."
+fi

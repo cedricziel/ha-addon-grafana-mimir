@@ -1,0 +1,27 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Grafana Mimir
+version: "2.2.0"
+slug: mimir
+description: A scalable storage for prometheus
+url: "https://github.com/home-assistant/addons-example/tree/main/example"
+watchdog: http://[HOST]:8001/ready
+ports:
+  8001/tcp: 8001
+  9001/tcp: 9001
+ports_description:
+  8001/tcp: Mimir
+  9001/tcp: gRPC
+arch:
+  - aarch64
+  - amd64
+init: false
+map:
+  - share:rw
+homeassistant_api: true
+options:
+  message: "Hello world..."
+  scrape_ha: false
+schema:
+  message: "str?"
+  scrape_ha: "bool?"
+#image: "ghcr.io/home-assistant/{arch}-addon-example"
