@@ -21,6 +21,5 @@ homeassistant_api: true
 options:
   scrape_ha: false
 schema:
-  message: "str?"
   scrape_ha: "bool?"
 image: "ghcr.io/cedricziel/{arch}-ha-addon-mimir"

@@ -1,6 +1,6 @@
 #include <tunables/global>
 
-profile example flags=(attach_disconnected,mediate_deleted) {
+profile mimir flags=(attach_disconnected,mediate_deleted) {
   #include <abstractions/base>
 
   # Capabilities
@@ -30,7 +30,7 @@ profile example flags=(attach_disconnected,mediate_deleted) {
   # Start new profile for service
   /bin/mimir cx -> mimir,
 
-  profile my_program flags=(attach_disconnected,mediate_deleted) {
+  profile mimir flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>
 
     # Receive signals from S6-Overlay
@@ -49,7 +49,7 @@ profile example flags=(attach_disconnected,mediate_deleted) {
     # 3. Review the audit log with `journalctl _TRANSPORT="audit" -g 'apparmor="ALLOWED"'` and add other access as needed
     # Remember to remove the `complain` flag when you are done
     /bin/mimir r,
-    /usr/bin/my_program r,
+    /usr/bin/mimir r,
     /bin/bash rix,
     /bin/echo ix,
     /etc/passwd r,
