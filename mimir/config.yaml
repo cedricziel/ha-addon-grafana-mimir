@@ -3,7 +3,7 @@ name: Grafana Mimir
 version: "2.2.0"
 slug: mimir
 description: A scalable storage for prometheus
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/cedricziel/ha-addon-mimir/blob/main/mimir"
 watchdog: http://[HOST]:8001/ready
 ports:
   8001/tcp: 8001
