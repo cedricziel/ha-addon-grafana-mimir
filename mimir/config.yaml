@@ -19,7 +19,6 @@ map:
   - share:rw
 homeassistant_api: true
 options:
-  message: "Hello world..."
   scrape_ha: false
 schema:
   message: "str?"

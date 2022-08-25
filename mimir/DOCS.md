@@ -30,3 +30,19 @@ prometheus:
 This exposes an API endpoint containing the metrics. Don't worry, it's protected through API keys.
 
 Next, enable the scraping through the addon configuration. Restart the addon. That's it!
+
+## OpenTelemetry
+
+Mimir can natively ingest OpenTelemetry metrics.
+
+```shell
+export OTEL_OTLP_ENDPOINT=http://local-mimir:8001/otlp
+```
+
+Or configure your exporter like this:
+
+```yaml
+exporters:
+  otlphttp:
+    endpoint: http://local-mimir:8001/otlp
+```
