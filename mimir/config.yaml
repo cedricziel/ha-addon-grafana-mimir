@@ -24,4 +24,4 @@ options:
 schema:
   message: "str?"
   scrape_ha: "bool?"
-#image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/cedricziel/{arch}-ha-addon-mimir"
