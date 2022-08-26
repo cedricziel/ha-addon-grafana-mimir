@@ -14,3 +14,6 @@ This repository contains the following add-ons
 ![Supports amd64 Architecture][amd64-shield]
 
 ![Mimir data source in HomeAssistant](./images/mimir-preview.png)
+
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
