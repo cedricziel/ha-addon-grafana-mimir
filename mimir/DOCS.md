@@ -11,7 +11,7 @@ To include your local mimir instance as datasource in Grafana:
 - Go to "Configuration" -> "Data sources"
 - Click "Add data source"
 - Select "Prometheus" (Mimir can be used as a drop-in replacement for Prometheus)
-- Enter "http://b1b82101-mimir:8001/prometheus" as `URL` configuration
+- Enter "http://24212397-mimir:8001/prometheus" as `URL` configuration
 
 That's it!
 
@@ -36,7 +36,7 @@ Next, enable the scraping through the addon configuration. Restart the addon. Th
 Mimir can natively ingest OpenTelemetry metrics.
 
 ```shell
-export OTEL_OTLP_ENDPOINT=http://b1b82101-mimir:8001/otlp
+export OTEL_OTLP_ENDPOINT=http://24212397-mimir:8001/otlp
 ```
 
 Or configure your exporter like this:
@@ -44,5 +44,5 @@ Or configure your exporter like this:
 ```yaml
 exporters:
   otlphttp:
-    endpoint: http://b1b82101-mimir:8001/otlp
+    endpoint: http://24212397-mimir:8001/otlp
 ```
