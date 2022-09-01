@@ -1,14 +1,14 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Grafana Mimir
-version: "2.2.0"
+version: "2.2.0.1"
 slug: mimir
 description: A scalable storage for prometheus
 url: "https://github.com/cedricziel/ha-addon-grafana-mimir/blob/main/mimir"
 watchdog: http://[HOST]:8001/ready
 apparmor: false
 ports:
-  8001/tcp: 8001
-  9001/tcp: 9001
+  8001/tcp: null
+  9001/tcp: null
 ports_description:
   8001/tcp: Mimir
   9001/tcp: gRPC
