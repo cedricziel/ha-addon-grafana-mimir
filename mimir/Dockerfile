@@ -6,8 +6,8 @@ FROM --platform=linux/amd64 grafana/mimir:2.2.0 as mimir-amd64
 FROM --platform=linux/arm64 grafana/mimir:2.2.0 as mimir-arm64
 
 # Agent
-FROM --platform=linux/amd64 telegraf:1.23.4 as telegraf-amd64
-FROM --platform=linux/arm64/v8 telegraf:1.23.4 as telegraf-arm64
+FROM --platform=linux/amd64 telegraf:1.24.0 as telegraf-amd64
+FROM --platform=linux/arm64/v8 telegraf:1.24.0 as telegraf-arm64
 
 FROM scratch as container
 
