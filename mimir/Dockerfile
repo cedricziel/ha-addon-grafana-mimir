@@ -2,8 +2,8 @@
 ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/aarch64:6.0.0
 
 # Telelgraf
-FROM --platform=linux/amd64 grafana/mimir:2.2.0 as mimir-amd64
-FROM --platform=linux/arm64 grafana/mimir:2.2.0 as mimir-arm64
+FROM --platform=linux/amd64 grafana/mimir:2.3.1 as mimir-amd64
+FROM --platform=linux/arm64 grafana/mimir:2.3.1 as mimir-arm64
 
 # Agent
 FROM --platform=linux/amd64 telegraf:1.23.4 as telegraf-amd64
