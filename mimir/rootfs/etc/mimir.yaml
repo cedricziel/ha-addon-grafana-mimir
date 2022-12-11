@@ -1,3 +1,4 @@
+---
 # Configuration for running Mimir in single-process mode.
 # This should not be used in production.  It is only for getting started
 # and development.
@@ -42,9 +43,7 @@ blocks_storage:
   bucket_store:
     sync_dir: /data/mimir/tsdb-sync
 
-  # You can choose between local storage and Amazon S3, Google GCS and Azure storage. Each option requires additional configuration
-  # as shown below. All options can be configured via flags as well which might be handy for secret inputs.
-  backend: filesystem # s3, gcs, azure or filesystem are valid options
+  backend: filesystem
   filesystem:
     dir: /data/mimir/blocks
 

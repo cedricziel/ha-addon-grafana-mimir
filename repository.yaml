@@ -1,4 +1,0 @@
-# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Grafana Mimir HomeAssistant repository
-url: "https://github.com/cedricziel/ha-addon-mimir"
-maintainer: Cedric Ziel <mail@cedric-ziel.com>

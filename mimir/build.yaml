@@ -1,3 +1,4 @@
+---
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
 build_from:
   aarch64: "ghcr.io/hassio-addons/debian-base/aarch64:6.0.0"
@@ -7,5 +8,3 @@ labels:
   org.opencontainers.image.description: "Host Grafana Mimir in HomeAssistant."
   org.opencontainers.image.source: "https://github.com/cedricziel/ha-addon-mimir"
   org.opencontainers.image.licenses: "Apache License 2.0"
-args:
-  TEMPIO_VERSION: "2021.09.0"
