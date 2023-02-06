@@ -9,9 +9,9 @@ FROM --platform=linux/arm64 grafana/mimir:2.2.0 as mimir-arm64
 
 # Agent
 # hadolint ignore=DL3029
-FROM --platform=linux/amd64 telegraf:1.23.4 as telegraf-amd64
+FROM --platform=linux/amd64 telegraf:1.25.1 as telegraf-amd64
 # hadolint ignore=DL3029
-FROM --platform=linux/arm64/v8 telegraf:1.23.4 as telegraf-arm64
+FROM --platform=linux/arm64/v8 telegraf:1.25.1 as telegraf-arm64
 
 FROM scratch as container
 
