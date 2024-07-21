@@ -6,8 +6,12 @@ updates:
     schedule:
       interval: weekly
       time: "06:00"
+    assignees:
+    - cedricziel
   - package-ecosystem: "docker"
     directory: "/mimir"
     schedule:
       interval: weekly
       time: "06:00"
+    assignees:
+    - cedricziel
