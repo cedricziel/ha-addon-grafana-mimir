@@ -1,3 +1,7 @@
+# This repository is archived
+
+The contents has moved to the [main repository](https://github.com/cedricziel/ha-addons)
+
 # Grafana Mimir Home Assistant add-on repository
 
 Use Grafana Mimir with HomeAssistant
