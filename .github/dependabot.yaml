@@ -7,11 +7,11 @@ updates:
       interval: weekly
       time: "06:00"
     assignees:
-    - cedricziel
+      - cedricziel
   - package-ecosystem: "docker"
     directory: "/mimir"
     schedule:
       interval: weekly
       time: "06:00"
     assignees:
-    - cedricziel
+      - cedricziel
